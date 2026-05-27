@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<h2 class="text-center mt-3">My Cart</h2>
+
+{% for item in cart_items %}
+<div class="card m-3" style="width: 18rem;">
+  <div class="card-body">
+
+    <p><b>Product ID:</b> {{item.product_id}}</p>
+    <p><b>Price:</b> {{item.p_price}}</p>
+
+    <!-- ✅ DELETE BUTTON -->
+    <form action="/product/delete_cart_item/{{item.cart_id}}/" method="POST">
+        {% csrf_token %}
+        <button class="btn btn-danger">Delete</button>
+    </form>
+
+  </div>
+</div>
+{% endfor %}
+
+</body>
+</html>

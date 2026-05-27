@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Product</title>
+</head>
+<body>
+
+<h2>Update Product</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <label>Name:</label>
+    <input type="text" name="p_name" value="{{product.p_name}}"><br><br>
+
+    <label>Type:</label>
+    <input type="text" name="p_type" value="{{product.p_type}}"><br><br>
+
+    <label>Price:</label>
+    <input type="number" name="p_price" value="{{product.p_price}}"><br><br>
+
+    <label>Quantity:</label>
+    <input type="number" name="p_quantity" value="{{product.p_quantity}}"><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+</body>
+</html>
