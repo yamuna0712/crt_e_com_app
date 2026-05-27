@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #eef1f5;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .header-details {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Container */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        /* Card Layout */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            border-left: 5px solid #4ca1af;
+            padding-left: 10px;
+        }
+
+        /* Two Column Layout */
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            background: #4ca1af;
+            color: white;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Projects */
+        .project {
+            padding: 10px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 10px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTFOLIO</h1>
+    <div class="header-details">
+        <p><b>Yamuna Thummapudi</b></p>
+        <p>yamuna@gmail.com</p>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="card col">
+            <h2>Personal Details</h2>
+            <p><b>Name:</b> Yamuna Thummapudi</p>
+            <p><b>DOB:</b> 12-Feb-2007</p>
+            <p><b>Location:</b> Andhra Pradesh</p>
+            <p><b>Phone:</b> 9876543210</p>
+        </div>
+
+        <div class="card col">
+            <h2>Professional Details</h2>
+            <p><b>Qualification:</b> B.Tech (CSE)</p>
+            <p><b>University:</b> VFSTR</p>
+            <p><b>CGPA:</b> 8.8</p>
+            <p><b>Languages:</b> English, Telugu, Hindi</p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>React</span>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Personal Expense Manager</h3>
+            <p>Application to track and manage daily expenses efficiently.</p>
+        </div>
+
+        <div class="project">
+            <h3>E-commerce Website</h3>
+            <p>Designed a simple online shopping platform with product display.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Created a responsive portfolio to showcase skills and projects.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
